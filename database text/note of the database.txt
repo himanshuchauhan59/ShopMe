@@ -1,0 +1,9 @@
+1.  images feild
+
+	1. images
+	2. product name
+	3. price
+	4. product info
+	5. discription
+	6. add discount
+	7. facilities

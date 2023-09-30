@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://localhost/jp%20tech/shoping_system/My_cart.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShopMe</title>
+    <link rel="stylesheet" href="./JP MART_files/glide.core.min.css">
+    <link rel="stylesheet" href="./JP MART_files/glide.theme.min.css">
+    <script src="./JP MART_files/jquery.min.js.download"></script>
+    <link href="./JP MART_files/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./JP MART_files/all.min.css">
+    <link rel="stylesheet" href="./JP MART_files/mainsection.css">
+    <link href="./JP MART_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        #name {
+            border-radius: 20px;
+            text-transform: none;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <div>
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="http://localhost/jp%20tech/shoping_system/My_cart.php#"><img src="./JP MART_files/logo.png" style="width: 60px;height: 30px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./JP MART_files/logo.png" style="width: 60px;height: 30px;"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-secondary">
+                        <form class="d-flex ms-2" role="search">
+                            <input class="form-control me-2 w-125 h-100" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-warning" type="submit">Search</button>
+                        </form>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="http://localhost/jp%20tech/index/mainsection.php"><i class="fa-solid fa-house"></i>
+                                    Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://localhost/jp%20tech/shoping_system/My_cart.php#"><i class="fa-solid fa-bars-progress"></i> Facilities</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://localhost/jp%20tech/shoping_system/My_cart.php#"><i class="fa-solid fa-briefcase"></i> Works</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://localhost/jp%20tech/shoping_system/My_cart.php#"><i class="fa-solid fa-bell-concierge"></i> Services</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://localhost/jp%20tech/shoping_system/My_cart.php#"><i class="fa-solid fa-address-card"></i> About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://localhost/jp%20tech/shoping_system/My_cart.php#"><i class="fa-solid fa-id-badge"></i> Contact</a>
+                            </li>
+                                                            
+                                <span id="dummy" style="display: none;">Divyesh@gmail.com</span>
+                                <a href="http://localhost/jp%20tech/login%20sys/logout.php">
+                                    <p class="text-dark my-1 px-3 text-center bg-warning p-1" id="name">D</p>
+                                </a>
+                                <script>
+                                    let txt = document.getElementById('name');
+                                    let name = document.getElementById('dummy').innerHTML;
+                                    let Sub_name = name.toUpperCase();
+                                    let split_name = Sub_name.split('');
+                                    txt.innerHTML = split_name[0];
+                                </script>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="nav2">
+            <div class="nav" id="nav">
+                <a href="http://localhost/jp%20tech/shoping_system/My_cart.php#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">All <i class="fa-solid fa-angles-right" id="all"></i></a>
+                <a href="http://localhost/jp%20tech/attaches/categories.php?Categorie=Mobile" class="nav-link">Mobile</a>
+                <a href="http://localhost/jp%20tech/attaches/categories.php?Categorie=Laptop" class="nav-link">Laptop</a>
+                <a href="http://localhost/jp%20tech/attaches/categories.php?Categorie=T.V" class="nav-link">T.V.</a>
+                <a href="http://localhost/jp%20tech/attaches/categories.php?Categorie=Refrigerator" class="nav-link">Refrigerator</a>
+                <a href="http://localhost/jp%20tech/shoping_system/My_cart.php#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">More..</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-secondary">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <p>This Button Redirect The Login Page You can Login Our Webpage</p>
+                        </div>
+                        <div class="col-lg-4"><a href="http://localhost/jp%20tech/login%20sys/system.php?sys=16509104700002"><button class="btn btn-outline-light">Login Page</button></a></div>
+                    </div>
+                </div>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Sign Up</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <p>This Button Redirect The SignUp Page You can SignUp Our Webpage</p>
+                        </div>
+                        <div class="col-lg-4"><a href="http://localhost/jp%20tech/login%20sys/system.php?sys=52334964549527"><button class="btn btn-outline-warning">SignUp Page</button></a></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel"><img src="./JP MART_files/logo.png" style="width: 60px;height: 30px;"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row">
+                                    <div class="col-3 my-1 ">
+                        <a href="http://localhost/jp%20tech/shoping_system/categories.php?Categorie=%20hands-free" style="text-decoration: none;" class="text-dark border-bottom border-dark"> hands-free</a>
+                    </div>
+                                    <div class="col-3 my-1 ">
+                        <a href="http://localhost/jp%20tech/shoping_system/categories.php?Categorie=A.C." style="text-decoration: none;" class="text-dark border-bottom border-dark">A.C.</a>
+                    </div>
+                                    <div class="col-3 my-1 ">
+                        <a href="http://localhost/jp%20tech/shoping_system/categories.php?Categorie=head-phone" style="text-decoration: none;" class="text-dark border-bottom border-dark">head-phone</a>
+                    </div>
+                                    <div class="col-3 my-1 ">
+                        <a href="http://localhost/jp%20tech/shoping_system/categories.php?Categorie=Laptop" style="text-decoration: none;" class="text-dark border-bottom border-dark">Laptop</a>
+                    </div>
+                                    <div class="col-3 my-1 ">
+                        <a href="http://localhost/jp%20tech/shoping_system/categories.php?Categorie=Mobile" style="text-decoration: none;" class="text-dark border-bottom border-dark">Mobile </a>
+                    </div>
+                                    <div class="col-3 my-1 ">
+                        <a href="http://localhost/jp%20tech/shoping_system/categories.php?Categorie=Refrigerator" style="text-decoration: none;" class="text-dark border-bottom border-dark">Refrigerator</a>
+                    </div>
+                                    <div class="col-3 my-1 ">
+                        <a href="http://localhost/jp%20tech/shoping_system/categories.php?Categorie=T.V" style="text-decoration: none;" class="text-dark border-bottom border-dark">T.V</a>
+                    </div>
+                                    <div class="col-3 my-1 ">
+                        <a href="http://localhost/jp%20tech/shoping_system/categories.php?Categorie=Tablet" style="text-decoration: none;" class="text-dark border-bottom border-dark">Tablet</a>
+                    </div>
+                            </div>
+        </div>
+    </div>
+    <script src="./JP MART_files/aos.js.download"></script>
+
+    <script src="./JP MART_files/glide"></script>
+    <script src="./JP MART_files/bootstrap.bundle.min.js.download" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./JP MART_files/bootstrap.bundle.min.js(1).download" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+<style>
+    .container {
+        margin-top: 10%;
+    }
+</style>
+
+<div class="container h-100">
+    <h1>My Cart</h1>
+            <div class="card mb-3" style="max-width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="./JP MART_files/apple.jpg" class="img-fluid rounded-start">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple iPhone 11 (128GB) - Yellow</h5>
+                        <div class="row border-bottom border-secondary">
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-secondary">Brand | apple</p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-secondary">Price |<del>54900</del></p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-secondary">discount | 9%</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-dark">Quantity | 1</p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-dark">Payable Amount | 49959</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <button class="btn px-5">View</button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn px-5">Delete</button>
+                            </div>
+                        </div>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="card mb-3" style="max-width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="./JP MART_files/apple1.jpg" class="img-fluid rounded-start">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple iPhone 13 (128GB) - blue </h5>
+                        <div class="row border-bottom border-secondary">
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-secondary">Brand | apple</p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-secondary">Price |<del>79900</del></p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-secondary">discount | 12%</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-dark">Quantity | 1</p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-dark">Payable Amount | 70312</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <button class="btn px-5">View</button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn px-5">Delete</button>
+                            </div>
+                        </div>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="card mb-3" style="max-width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="./JP MART_files/81xvGbBFNhL._AC_UY218_.jpg" class="img-fluid rounded-start">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy M33 5G (Deep Ocean Blue, 6GB, 128GB Storage) | 6000mAh Battery | Upto 12GB RAM with RAM Plus | Travel Adapter to be Purchased Separately</h5>
+                        <div class="row border-bottom border-secondary">
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-secondary">Brand | samsung</p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-secondary">Price |<del>24999</del></p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-secondary">discount | 24%</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-dark">Quantity | 1</p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-dark">Payable Amount | 18999</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <button class="btn px-5">View</button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn px-5">Delete</button>
+                            </div>
+                        </div>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="card mb-3" style="max-width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="./JP MART_files/refigrator.jpg" class="img-fluid rounded-start">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung 192 L 2 Star Direct Cool Single Door Refrigerator (RR19A241BGS/NL, Grey Silver)</h5>
+                        <div class="row border-bottom border-secondary">
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-secondary">Brand | samsung</p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-secondary">Price |<del>14990</del></p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-secondary">discount | 12%</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-dark">Quantity | 1</p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text h6 text-start my-1 text-dark">Payable Amount | 13191</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <button class="btn px-5">View</button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn px-5">Delete</button>
+                            </div>
+                        </div>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></body></html>

@@ -1,0 +1,279 @@
+.navbar-nav .nav-link {
+    text-align: center;
+    padding: 5px 10px;
+    margin: 2px 2px;
+    color: black;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    transition: 1s;
+    background: rgba(13, 13, 13, 0.297);
+    border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(94, 91, 91, 0.746);
+} 
+
+.navbar-nav .nav-link:hover {
+    color: white;
+    border: 0px double black;
+    box-shadow: 5px 10px 10px black;
+}
+
+.navbar-nav .nav-link .active:hover {
+    color: white;
+}
+
+.navbar-nav .nav-link i {
+    margin: 0px 5px;
+}
+
+i#all {
+    color: white;
+}
+
+#nav {
+    position: relative;
+    padding: 5px 3px;
+    top: 59px;
+    background-color: rgb(59, 0, 58);
+}
+
+#nav a {
+    color: white;
+    margin: 0px 5px;
+}
+
+#nav a:hover {
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+
+.links {
+    text-align: center;
+    margin: 6px 0px 0px 7px;
+}
+
+.links:hover {
+    border-bottom: 1px solid black;
+}
+
+.carousel {
+    position: relative;
+    top: 58px;
+}
+
+.sub-system-1 #nav2 {
+    width: 30vw;
+    height: 40px;
+}
+
+.sub-system-1 #nav2 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-radius: 3px;
+    width: 22vw;
+    background: white;
+    height: 19vw;
+}
+
+.sub-system-1 #nav2 .nav-link .img-thumbnail {
+    width: 8vw;
+    height: 8vw;
+    margin: 0px 12px;
+    padding: 5px;
+}
+
+.txt {
+    top: 10px;
+    left: 8px;
+    position: relative;
+    width: 100%;
+}
+
+.txt-sub {
+    margin: 0px 0px 0px 30px;
+}
+
+.sub-system-1 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+}
+
+
+/* sliders */
+
+.image {
+    width: 80%;
+    height: 14vw;
+    padding: 0px 14px;
+}
+
+.glide__slide--active {
+    transform: scale(1.1, 1.1);
+    transition: .3s;
+}
+
+.glide__track {
+    margin: 20px 0px 0px 11px;
+    padding: 10px 0px;
+}
+
+.fa-solid {
+    color: black;
+}
+
+.section-1 {
+    position: relative;
+    top: 50px;
+}
+
+@media screen and (min-width: 2250px) {
+    .txt-sub {
+        margin: 0px 0px 0px 30px;
+    }
+
+    .sub-system-1 #nav2 .nav-link .img-thumbnail {
+        width: 6vw;
+        height: 7vw;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .txt-sub {
+        margin: 0px 0px 0px 30px;
+    }
+
+    .sub-system-1 #nav2 .nav-link .img-thumbnail {
+        width: 6vw;
+        height: 7vw;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .txt-sub {
+        margin: 0px 0px 0px 20px;
+    }
+
+    .w-100 {
+        height: 24vh;
+    }
+
+    .sub-system-1 #nav2 {
+        position: relative;
+        top: 50px;
+        left: 0px;
+        border-radius: 3px;
+        width: 32vw;
+        background: white;
+        height: 33vw;
+        margin: 1% 18%;
+    }
+
+    .sub-system-1 #nav2 .nav-link .img-thumbnail {
+        width: 9vw;
+        height: 9vw;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .sub-system-1 #nav2 .nav-link .img-thumbnail {
+        width: 25vw;
+        height: 26vw;
+    }
+
+
+    .sub-system-1 #nav2 {
+        width: 69vw;
+        left: -5%;
+        height: 19vh;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .sub-system-1 #nav2 .nav-link .img-thumbnail {
+        width: 25vw;
+        height: 26vw;
+    }
+
+
+    .sub-system-1 #nav2 {
+        width: 69vw;
+        left: -4%;
+        height: 79vh;
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+    .sub-system-1 {
+        flex-direction: column;
+    }
+
+    .w-100 {
+        height: 24vh;
+    }
+
+    .sub-system-1 #nav2 {
+        top: 45px;
+        left: -11%;
+        width: 90vw;
+        height: 40vh;
+        margin-bottom: 14px;
+    }
+
+    .sub-system-1 #nav2 .nav-link .img-thumbnail {
+        width: 23vw;
+        height: 25vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sub-system-1 {
+        flex-direction: column;
+    }
+
+    .w-100 {
+        height: 24vh;
+    }
+
+    .sub-system-1 #nav2 {
+        top: 45px;
+        left: -13%;
+        width: 90vw;
+        height: 93vw;
+        margin-bottom: 22px;
+    }
+
+    .sub-system-1 #nav2 .nav-link .img-thumbnail {
+        width: 30vw;
+        height: 33vw;
+    }
+}
+
+@media screen and (max-width: 300px) and (min-width: 200px) {
+    .sub-system-1 #nav2 .nav-link .img-thumbnail {
+        width: 25vw;
+        height: 26vw;
+    }
+}

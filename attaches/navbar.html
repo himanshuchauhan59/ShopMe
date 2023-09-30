@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShopMe</title>
+    <link rel="stylesheet" href="./glide.core.min.css">
+    <link rel="stylesheet" href="./glide.theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../index/mainsection.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../assets/logo.png" style="width: 60px;height: 30px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../assets/logo.png"
+                                style="width: 60px;height: 30px;"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-secondary">
+                        <form class="d-flex ms-2" role="search">
+                            <input class="form-control me-2 w-125 h-100" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-warning" type="submit">Search</button>
+                        </form>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-house"></i>
+                                    Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../menu/services.html"><i class="fa-solid fa-bars-progress"></i> Services</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../menu/team.html"><i class="fa-solid fa-briefcase"></i> Our Team</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../menu/testimoniunce.html"><i class="fa-solid fa-bell-concierge"></i> testimoniunce</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../menu/about.html"><i class="fa-solid fa-address-card"></i> About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../menu/contactus.php"><i class="fa-solid fa-id-badge"></i> Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-light float-end" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Login/SignUp
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="nav2">
+            <div class="nav" id="nav">
+                <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                    aria-controls="offcanvasTop">All <i class="fa-solid fa-angles-right" id="all"></i></a>
+                <a href="#" class="nav-link">Mobile</a>
+                <a href="#" class="nav-link">Laptop</a>
+                <a href="#" class="nav-link">T.V.</a>
+                <a href="#" class="nav-link">Refrigerator</a>
+                <a href="#" class="nav-link">A.C.</a>
+                <a href="#" class="nav-link">T.V. Accesoris</a>
+                <a href="#" class="nav-link">Mobile Accesoris</a>
+                <a href="#" class="nav-link">Desktop</a>
+                <a href="#" class="nav-link">More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-secondary">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <p>This Button Redirect The Login Page You can Login Our Webpage</p>
+                        </div>
+                        <div class="col-lg-4"><a href="../login sys/system.php?sys=16509104700002"><button class="btn btn-outline-light">Login Page</button></a></div>
+                    </div>
+                </div>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Sign Up</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <p>This Button Redirect The SignUp Page You can SignUp Our Webpage</p>
+                        </div>
+                        <div class="col-lg-4"><a href="../login sys/system.php?sys=52334964549527"><button class="btn btn-outline-warning">SignUp Page</button></a></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel"><img src="../assets/logo.png"
+                    style="width: 60px;height: 30px;"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="col-3">
+                    <a href="#" class="nav-link links">Mobile</a>
+                    <a href="#" class="nav-link links">Laptop</a>
+                    <a href="#" class="nav-link links">T.V.</a>
+                    <a href="#" class="nav-link links">Refrigerator</a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="nav-link links">A.C.</a>
+                    <a href="#" class="nav-link links">T.V. Accesoris</a>
+                    <a href="#" class="nav-link links">Mobile Accesoris</a>
+                    <a href="#" class="nav-link links">Desktop</a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="nav-link links">A.C.</a>
+                    <a href="#" class="nav-link links">T.V. Accesoris</a>
+                    <a href="#" class="nav-link links">Mobile Accesoris</a>
+                    <a href="#" class="nav-link links">Desktop</a>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="nav-link links">A.C.</a>
+                    <a href="#" class="nav-link links">T.V. Accesoris</a>
+                    <a href="#" class="nav-link links">Mobile Accesoris</a>
+                    <a href="#" class="nav-link links">Desktop</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://cdn.jsdelivr.net/i]npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
